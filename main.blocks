@@ -1,0 +1,116 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="q?9=)CH{YYU]%sH0T3|3">Player</variable><variable type="KIND_SpriteKind" id="i{9Th+;Y~a1c329U4i9F">Projectile</variable><variable type="KIND_SpriteKind" id="Hs|c$NEGL6|M,leiHOJ_">Food</variable><variable type="KIND_SpriteKind" id="WMUG[@^hY4ecb19T}dY%">Enemy</variable><variable type="KIND_SpriteKind" id="|Q3`bc-0r?#oe]9Ua7-i">BLUE</variable><variable type="KIND_SpriteKind" id="%QY.o7Sw@9lmaZ?%s4t1">ORANGE</variable><variable id="boL4Ha`;f*R5EcJR?o,`">mySprite</variable><variable id="@*oyG8^)(U.(SX;gAW5]">BLUE BALL</variable><variable id="@J?0?Do?.CszW|[x}sut">ORANGE BALL</variable><variable id="_S|?Cpo!?EVHgXJn68F:">1st number</variable><variable id="N^{kmicL|.lWW~%ZNPUR">2nd NUMBER</variable></variables><block type="pxt-on-start" id="-zzpD-0u6cAc9io@i:Ms" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="S?M#M^[K5;$gH%INg3sM"><value name="color"><shadow type="colorindexpicker" id="N)x~obB%[].JicmjSKhi"><field name="index">12</field></shadow></value><next><block type="controls_repeat_ext" id="1?}Nx]Oyxbqfbs^y)^RA"><value name="TIMES"><shadow type="math_whole_number" id="T@?Eoq8d@vybe*).#bl|"><field name="NUM">10</field></shadow></value><statement name="DO"><block type="variables_set" id="UB]Rah!}7g5%JF*z!P-S"><field name="VAR" id="@*oyG8^)(U.(SX;gAW5]">BLUE BALL</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="@PmXnI%Ve.P3Dm}qGQ,r"><value name="img"><shadow type="screen_image_picker" id="oDnt,|#L8%9hfz8?|)%/"><field name="img">img`
+. . b b b b . . 
+. b 5 5 5 5 b . 
+b 5 d 3 3 d 5 b 
+b 5 3 5 5 1 5 b 
+c 5 3 5 5 1 d c 
+c d d 1 1 d d c 
+. f d d d d f . 
+. . f f f f . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"oDnt,|#L8%9hfz8?|)%/"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id=".G$_bM%$q_7$`ejypSVD"><field name="MEMBER">BLUE</field></shadow></value></block></value><next><block type="spritesetpos" id="$lj`(I,oZCQx[,1139ZA"><value name="sprite"><block type="variables_get" id="*sm1,%X0CzTgWflriZ]^"><field name="VAR" id="@*oyG8^)(U.(SX;gAW5]">BLUE BALL</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random" id="TIW(h53GKiXM[yE/=bpF"><value name="min"><shadow type="math_number" id=")#.TAu/NdK`;Qpc^{(zg"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="u5~!lgex}lGtup-P+L81"><field name="NUM">150</field></shadow></value></block></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random" id="kE+rqHCtEwv9haHZF%-+"><value name="min"><shadow type="math_number" id="{:I!+?kiC(@-YT+(U3w;"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="IpUp@JY(,=jP2qiX3IKx"><field name="NUM">110</field></shadow></value></block></value><next><block type="variables_set" id="cm?G46#q)|AqTa+r%.A."><field name="VAR" id="@J?0?Do?.CszW|[x}sut">ORANGE BALL</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="9DXe(`BHby2C$PAe1Jqu"><value name="img"><shadow type="screen_image_picker" id="r~2mtbj[ihtqB{Ks6u6N"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . 7 . 7 . . . . . . . 
+. . . . 5 5 7 5 7 5 5 . . . . . 
+. . . 5 . . 7 . 7 . . 5 . . . . 
+. . 5 . . 7 7 7 7 7 7 . 5 . . . 
+. . 5 . 7 . 7 . 7 . 7 . 5 . . . 
+. . 5 . 7 . 7 . 7 . . . 5 . . . 
+. . 5 . 7 7 7 7 7 7 7 . 5 . . . 
+. . 5 . . . 7 . 7 . 7 . 5 . . . 
+. . 5 . 7 . 7 . 7 . 7 . 5 . . . 
+. . 5 . 7 7 7 7 7 7 . . 5 . . . 
+. . . 5 . . 7 . 7 . . 5 . . . . 
+. . . . 5 5 7 5 7 5 5 . . . . . 
+. . . . . . 7 . 7 . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"r~2mtbj[ihtqB{Ks6u6N"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="wUr.sme333R[htsyHm;2"><field name="MEMBER">ORANGE</field></shadow></value></block></value><next><block type="spritesetpos" id="XzVoIh2]sd,EW7r#bLKj"><value name="sprite"><block type="variables_get" id=":C4^1qi706u.2,5IL-:J"><field name="VAR" id="@J?0?Do?.CszW|[x}sut">ORANGE BALL</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random" id="#Tmhk0^LauoiJERztX#b"><value name="min"><shadow type="math_number" id="eSZaF5`s#E-6mt)q)#/$"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="drz7`jR_ir/)^u[YT@=8"><field name="NUM">150</field></shadow></value></block></value><value name="y"><shadow type="positionPicker"><field name="index">0</field></shadow><block type="device_random" id="%%+/Mi),oasN*/i@^+Of"><value name="min"><shadow type="math_number" id="fCG9P^,NYz}jgG/9.$[T"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="@tX:^;F5EZyl)zsWRw])"><field name="NUM">110</field></shadow></value></block></value></block></next></block></next></block></next></block></statement><next><block type="gameSplash" id="8}Su!N0ZGz~-k5$$/G8!"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><value name="title"><shadow type="text" id="=i~?3nFJ(yT%7rXEYGEb"><field name="TEXT">WELCOME TO 'DIVIDING MACHINE'</field></shadow></value><value name="subtitle"><shadow type="text" id="R|exw=VxS}2|~@@#]S_U"><field name="TEXT">By - NIIN SAURABH</field></shadow></value><next><block type="game_dialog_set_cursor" id="YL3jbxfS07pzX_0rMZD!"><value name="frame"><shadow type="screen_image_picker" id="6+m[:*I38m%U$gt~KKAO"><field name="img">img`
+....................
+.........4444.......
+..........4454......
+...........4554.....
+...........44554....
+............44554...
+.............44454..
+4444444444444455454.
+45454545454545445454
+44444444444444444454
+54545454545454545454
+44444444444444554554
+.............454554.
+............445454..
+...........445454...
+..........445454....
+........4445454.....
+.........44554......
+..........444.......
+....................
+`</field><data>{"commentRefs":[],"fieldData":{"img":"6+m[:*I38m%U$gt~KKAO"}}</data></shadow></value><next><block type="game_dialog_set_frame" id="B:*r3bOypVQ9:q;$2JbZ"><value name="frame"><shadow type="dialog_image_picker" id="gJ3FC?pAo9;7$X97A$sz"><field name="img">img`
+.................................
+...cc......................cc....
+..c55c..bbbb...bbbbb......c55c...
+.cb55bcbdddbbbbbdddbbbbbbcb55bc..
+b555555bbdddb111bdddb11db555555b.
+bb5555bbdbdb11111bdb1111bb5555bb.
+cb5555bcddd11111ddd11111cb5555bc.
+.c5bb5c1111d111d111d111ddc5bb5c..
+.cbbbbc111111111111111111cbbbbc..
+..b11111111111111111111111d111bb.
+..b111111111111111111111111d1bdb.
+..bb11111111111111111111111dbddb.
+.bbdb1d11111111111111111111ddddb.
+.bdddd11111111111111111111d1bdbb.
+.bddbd11111111111111111111111bb..
+.bdb1d111111111111111111111111b..
+.bb111d11111111111111111111111b..
+..b11111111111111111111111d111bb.
+..b111111111111111111111111d1bdb.
+..bb11111111111111111111111dbddb.
+.bbdb1d11111111111111111111ddddb.
+.bdddd11111111111111111111d1bdbb.
+.bddbd11111111111111111111111bb..
+.bdbb1111111111111111111111111b..
+.bbbd1111111111111111111111111b..
+..bcc111111111111111111111dccdb..
+..c55c111d111d111d111d1111c55cb..
+.cb55bcdd11111ddd11111dddcb55bc..
+b555555b11111bdb11111bdbb555555b.
+bb5555bbb111bdddb111bdddbb5555bb.
+cb5555bcdbbbbbdddbbbbbddcb5555bc.
+.c5bb5c.bb...bbbbb...bbbbc5bb5c..
+.cbbbbc..................cbbbbc..
+`</field><data>{"commentRefs":[],"fieldData":{"img":"gJ3FC?pAo9;7$X97A$sz"}}</data></shadow></value><next><block type="game_show_long_text" id="M([~gsZ0qcMhCdhbXg^W"><field name="layout">DialogLayout.Center</field><value name="str"><shadow type="text" id="G1q?WhG(5fg,nNsc03i+"><field name="TEXT">FIRST ENTER 1st NUMBER AND THEN ENTER THE ANOTHER NUMBER </field></shadow></value><next><block type="game_show_long_text" id="|tvHCU,BU,N_E6Y3~*3b"><field name="layout">DialogLayout.Center</field><value name="str"><shadow type="text" id="~ENe,t0n?RYPr|N99oM5"><field name="TEXT">AND GET THE OUTPUT AS 1st NUMBER IS DIVISIBLE BY 2nd NUMBER ELSE 1st NUMBER IS NOT DIVISIBLE BY 2nd NUMBER</field></shadow></value><next><block type="variables_set" id="so6%D(xX{]{)$gWhVGq/"><field name="VAR" id="_S|?Cpo!?EVHgXJn68F:">1st number</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="gameaskfornumber" id="4K`nQ/;l?szrNH=I]!m6"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="message"><shadow type="text" id="s#w)DNk9|:kd%36$JECq"><field name="TEXT">ENTER THE 1st NUMBER</field></shadow></value><value name="answerLength"><shadow type="math_number_minmax" id="1G%GpI4?PdZ#_Fo.Y~Hc"><mutation min="1" max="10" label="AnswerLength" precision="0"/><field name="SLIDER">6</field></shadow></value></block></value><next><block type="variables_set" id="mnu:Wmm#/v5{QJPM_eFJ"><field name="VAR" id="N^{kmicL|.lWW~%ZNPUR">2nd NUMBER</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="gameaskfornumber" id="N@m+M!2LiqU61MF(GB)K"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="message"><shadow type="text" id="a+nc@y6*SIk{k4N:!Mp8"><field name="TEXT">ENTER THE 2nd NUMBER</field></shadow></value><value name="answerLength"><shadow type="math_number_minmax" id="vFG`.TRd/vs)uj2!$1Xl"><mutation min="1" max="10" label="AnswerLength" precision="0"/><field name="SLIDER">6</field></shadow></value></block></value><next><block type="controls_if" id="!k4sczE64BMd6e7.ENMC"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="]C%23ZGUE;L!e%21CE0W"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="math_modulo" id="@3+X1=1D=iDG2phy.INP"><value name="DIVIDEND"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="YH1.c`7wyd)vkLp`lWWs"><field name="VAR" id="_S|?Cpo!?EVHgXJn68F:">1st number</field></block></value><value name="DIVISOR"><shadow type="math_number"><field name="NUM">1</field></shadow><block type="variables_get" id="qe:Q;RJlWTM^^j03A55-"><field name="VAR" id="N^{kmicL|.lWW~%ZNPUR">2nd NUMBER</field></block></value></block></value><value name="B"><shadow type="math_number" id="OBo0VI-F5vw#D]v/mllM"><field name="NUM">0</field></shadow></value></block></value><statement name="DO0"><block type="variables_set" id="Z,9#x*}CUHOA5_|:p@4~"><field name="VAR" id="boL4Ha`;f*R5EcJR?o,`">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="w@lhSaxSpCRh#S9zDD}d"><value name="img"><shadow type="screen_image_picker" id="[BFP|K(}Xr2^0ywG7I7."><field name="img">img`
+. . . . . . f f f f . . . . . . 
+. . . . f f f 2 2 f f f . . . . 
+. . . f f f 2 2 2 2 f f f . . . 
+. . f f f e e e e e e f f f . . 
+. . f f e 2 2 2 2 2 2 e e f . . 
+. . f e 2 f f f f f f 2 e f . . 
+. . f f f f e e e e f f f f . . 
+. f f e f b f 4 4 f b f e f f . 
+. f e e 4 1 f d d f 1 4 e e f . 
+. . f e e d d d d d d e e f . . 
+. . . f e e 4 4 4 4 e e f . . . 
+. . e 4 f 2 2 2 2 2 2 f 4 e . . 
+. . 4 d f 2 2 2 2 2 2 f d 4 . . 
+. . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
+. . . . . f f f f f f . . . . . 
+. . . . . f f . . f f . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"[BFP|K(}Xr2^0ywG7I7."}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="RGh1tCX5;8y{U?}3OlOW"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesay" id="s4qQOE%[}H-([Qkbl2`E"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="M.0/(x@GC2gs/%UgIj^B"><field name="VAR" id="boL4Ha`;f*R5EcJR?o,`">mySprite</field></block></value><value name="text"><shadow type="text"><field name="TEXT">:)</field></shadow><block type="text_join" id="#?jh/y{z8E85,AwI{iRW"><mutation items="3"/><value name="ADD0"><shadow type="text"><field name="TEXT">Hello</field></shadow><block type="variables_get" id="V9$T[[E2GlwmJ*F?HK)b"><field name="VAR" id="_S|?Cpo!?EVHgXJn68F:">1st number</field></block></value><value name="ADD1"><shadow type="text" id="w+$a[c+o3)dGDolpo,|I"><field name="TEXT"> is divisible by </field></shadow></value><value name="ADD2"><shadow type="text"><field name="TEXT"/></shadow><block type="variables_get" id="`q}s$avs2s~XQ3PJd26a"><field name="VAR" id="N^{kmicL|.lWW~%ZNPUR">2nd NUMBER</field></block></value></block></value></block></next></block></statement><next><block type="controls_if" id="PJsUD-DUpHz3rIcrmlHg"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_negate" id="%6e^No6oL@q?6Q8t7eb|"><value name="BOOL"><block type="logic_compare" id="Q6*5/QwS5L~?1Nc:$XfR"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="math_modulo" id="{EBj[Xxd)DBJsNk+Ul8R"><value name="DIVIDEND"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="y~ZU4srl-wUU1FG*={QZ"><field name="VAR" id="_S|?Cpo!?EVHgXJn68F:">1st number</field></block></value><value name="DIVISOR"><shadow type="math_number"><field name="NUM">1</field></shadow><block type="variables_get" id="M2@5G)w383];fJ[,[T%}"><field name="VAR" id="N^{kmicL|.lWW~%ZNPUR">2nd NUMBER</field></block></value></block></value><value name="B"><shadow type="math_number" id="ezJZr:+[_ox6sjNz(M1Q"><field name="NUM">0</field></shadow></value></block></value></block></value><statement name="DO0"><block type="variables_set" id="mW!?Jf7l1!ebWa!9IHha"><field name="VAR" id="boL4Ha`;f*R5EcJR?o,`">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="{[?4TcswktMth~}`PPcW"><value name="img"><shadow type="screen_image_picker" id="x.X,XFxTKM.xhGRc.8H/"><field name="img">img`
+. . . . . . f f f f . . . . . . 
+. . . . f f f 2 2 f f f . . . . 
+. . . f f f 2 2 2 2 f f f . . . 
+. . f f f e e e e e e f f f . . 
+. . f f e 2 2 2 2 2 2 e e f . . 
+. . f e 2 f f f f f f 2 e f . . 
+. . f f f f e e e e f f f f . . 
+. f f e f b f 4 4 f b f e f f . 
+. f e e 4 1 f d d f 1 4 e e f . 
+. . f e e d d d d d d e e f . . 
+. . . f e e 4 4 4 4 e e f . . . 
+. . e 4 f 2 2 2 2 2 2 f 4 e . . 
+. . 4 d f 2 2 2 2 2 2 f d 4 . . 
+. . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
+. . . . . f f f f f f . . . . . 
+. . . . . f f . . f f . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"x.X,XFxTKM.xhGRc.8H/"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="2~B.doORh$%ErI4:!vDM"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesay" id="7RH}rm.cD}=K1vl5zS^."><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id=";fdI_nt5WORGJwVP/GsK"><field name="VAR" id="boL4Ha`;f*R5EcJR?o,`">mySprite</field></block></value><value name="text"><shadow type="text"><field name="TEXT">:)</field></shadow><block type="text_join" id="+sC|Gp|`aW-6vp]aI{Ya"><mutation items="3"/><value name="ADD0"><shadow type="text"><field name="TEXT">Hello</field></shadow><block type="variables_get" id="cgr?O`#{p#mDR%*c{?^G"><field name="VAR" id="_S|?Cpo!?EVHgXJn68F:">1st number</field></block></value><value name="ADD1"><shadow type="text" id="rW;3i^2A|c.Vk*i5qF)N"><field name="TEXT"> is not divisible by </field></shadow></value><value name="ADD2"><shadow type="text"><field name="TEXT"/></shadow><block type="variables_get" id="g]~EN8w=5`Ev20shEsBR"><field name="VAR" id="N^{kmicL|.lWW~%ZNPUR">2nd NUMBER</field></block></value></block></value></block></next></block></statement></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
